@@ -44,6 +44,9 @@
 
     .gallery img {
       max-width: 300px;
+      max-height: 400px;
+      width: 100%;
+      height: auto;
       margin: 10px;
       border: 2px solid #333;
     }
@@ -64,11 +67,11 @@
   </div>
 
   <div class="gallery" id="gallery">
-    <img src="tatto1.jpg" width="200" height="400" alt="Tattoo 1"/>
-    <img src="IMG_6014.jpeg" alt="Tattoo 2">
-    <img src="IMG_5555.jpeg" alt="Tattoo 3">
-    <img src="IMG_2763.jpeg" alt="Tattoo 4">
-    <img src="IMG_0068.jpeg" alt="Tattoo 5">
+    <img src="tatto1.jpg" width="300" height="400" alt="the Scorpion" onclick="showMessage(' the Scorpion')">
+    <img src="IMG_6014.jpeg" alt="Lettering" onclick="showMessage(' Lettering example')">
+    <img src="IMG_5555.jpeg" alt="Traditional Skull" onclick="showMessage(' the Traditional Skull')">
+    <img src="IMG_2763.jpeg" alt="Spider Butterfly " onclick="showMessage(' the Spider Butteflies')">
+    <img src="IMG_0068.jpeg" alt="Star Bird" onclick="showMessage(' the Bird')">
   </div>
 
   <div id="about">
@@ -78,5 +81,11 @@
     Every piece she creates is a testament to her artistic precision, where shadows and highlights intertwine, creating depth and dimension in each composition. </p>
   </div>
 
+<script>
+	function showMessage(tattooName){
+		alert("Youv'e clicked on" + tattooName); 
+		
+	}
+</script>
 </body>
 </html>
